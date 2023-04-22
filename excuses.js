@@ -1,7 +1,7 @@
 
-windows.onload =() =>{
+window.onload =() =>{
     let randomNumber = Math.random() *10;
-    document.querySelector('#excuse').innerHTML = randomNumber;
+    document.querySelector('#excuse').innerHTML = generateExcuse();
 }
 
 let generateExcuse =() =>{
@@ -17,5 +17,5 @@ let generateExcuse =() =>{
     let whnIndex= Math.floor(Math.random() *when.length);
 
 
-    return who[whIndex] + " " + action[actIndex] + " "+ what[whtIndex]+ when[whIndex];
+    return who[whIndex] + " " + action[actIndex] + " "+ what[whtIndex]+" "+ when[whIndex];
 }
